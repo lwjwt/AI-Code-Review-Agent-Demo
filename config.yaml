@@ -1,0 +1,11 @@
+# AI代码审查Agent系统配置
+ai_provider: "xiaomi"  # 使用的AI平台
+model: "deepseek-coder"  # 调用的模型
+
+agents:
+  scan_agent:
+    enabled: true
+    cron: "0 */6 * * *"  # 每6小时运行一次
+  review_agent:
+    enabled: true
+    max_tokens: 4096
